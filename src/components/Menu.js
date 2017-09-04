@@ -13,7 +13,6 @@ const mainCls = css({
   paddingBottom: 20,
   borderBottom: '1px solid gray',
   justifyContent: 'flex-end',
-  margin: 0,
   maxWidth: 'auto',
   flex: 'none'
 });

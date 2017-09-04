@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import 'bootstrap/scss/bootstrap-reboot.scss';
+import 'bootstrap/scss/bootstrap-grid.scss';
+
 import './extra.css';
 import './index.css';
 import './mdl.css';
@@ -28,7 +31,7 @@ const Footer = () => {
   );
 };
 
-const Header = () =>
+const Header = () => (
   <div
     style={{
       background: 'rebeccapurple'
@@ -52,9 +55,10 @@ const Header = () =>
         </Link>
       </h1>
     </div>
-  </div>;
+  </div>
+);
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Biserica Cluj - Biserica Creștină după Evanghelie"
@@ -81,7 +85,8 @@ const TemplateWrapper = ({ children }) =>
       {children()}
     </div>
     <Footer />
-  </div>;
+  </div>
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func

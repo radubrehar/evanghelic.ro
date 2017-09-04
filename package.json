@@ -5,12 +5,17 @@
   "version": "1.0.0",
   "author": "Radu Brehar <radu@evanghelic.ro>",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "gatsby": "^1.0.1",
     "gatsby-link": "^1.0.1",
     "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-sass": "^1.0.10",
     "glamor": "^2.20.39"
   },
-  "keywords": ["biserica", "biblia"],
+  "keywords": [
+    "biserica",
+    "biblia"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
