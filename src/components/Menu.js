@@ -75,6 +75,10 @@ const Menu = () => {
         <div className="col" style={{ textAlign: 'center' }}>
           <MenuItem to="/">Acasă</MenuItem>
           <MenuItem to="/despre-noi">Despre noi</MenuItem>
+          <MenuItem to="/viziune">Viziune</MenuItem>
+          <MenuItem to="/resurse">Resurse</MenuItem>
+          <MenuItem to="/blog">Blog</MenuItem>
+          <MenuItem to="/cum-pot-fi-maintuit">Cum pot fi mântuit?</MenuItem>
           <MenuItem to="/contact">Contact</MenuItem>
         </div>
       </div>
