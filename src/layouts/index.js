@@ -6,9 +6,17 @@ import Helmet from 'react-helmet';
 import 'bootstrap/scss/bootstrap-reboot.scss';
 import 'bootstrap/scss/bootstrap-grid.scss';
 
-import './extra.css';
-import './index.css';
-import './mdl.css';
+import 'typeface-roboto';
+
+import Text from '@app/Text';
+
+import { primaryColor, primaryColorText, primaryColorDark } from '@app/colors';
+
+import boxShadow from '@app/boxShadow';
+
+import './extra.scss';
+// import './index.css';
+// import './mdl.css';
 
 import Menu from '../components/Menu';
 import { css } from 'glamor';
@@ -34,9 +42,21 @@ const Footer = () => {
 const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple'
+      background: primaryColor,
+      color: primaryColorText,
+      position: 'relative'
     }}
   >
+    <div
+      style={{
+        background: primaryColorDark,
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: 10
+      }}
+    />
     <div
       style={{
         margin: '0 auto'
@@ -51,7 +71,12 @@ const Header = () => (
             textDecoration: 'none'
           }}
         >
-          Biserica Creștină după Evanghelie, Cluj-Napoca
+          <Text size={34} block align="end" light>
+            Biserica Creștină după Evanghelie
+          </Text>
+          <Text size={16} block align="end" thin>
+            — Cluj-Napoca
+          </Text>
         </Link>
       </h1>
     </div>
