@@ -1,17 +1,35 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import Menu from '../components/Menu';
-import Row from '../components/Row';
+import Contact from './contact';
 
-const IndexPage = () => (
-  <div>
-    <Row>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
-    </Row>
-  </div>
-);
+const IndexPage = ({ data }) => {
+  return (
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <p>Bine ati venit!</p>
+            <p>
+              Gasiti adresa noastra pe pagina de{' '}
+              <Link to="/page-2/">contact</Link>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Contact />
+    </div>
+  );
+};
 
 export default IndexPage;
+
+export const query = graphql`
+  query WelcomeQuery {
+    site {
+      siteMetadata {
+        welcome
+      }
+    }
+  }
+`;

@@ -8,9 +8,14 @@
     "bootstrap": "^4.0.0-alpha.6",
     "gatsby": "^1.0.1",
     "gatsby-link": "^1.0.1",
+    "gatsby-plugin-catch-links": "^1.0.8",
+    "gatsby-plugin-glamor": "^1.6.7",
     "gatsby-plugin-react-helmet": "^1.0.1",
     "gatsby-plugin-sass": "^1.0.10",
+    "gatsby-source-filesystem": "^1.4.12",
+    "gatsby-transformer-remark": "^1.7.7",
     "glamor": "^2.20.39",
+    "react-google-maps": "^7.1.0",
     "typeface-roboto": "0.0.35"
   },
   "keywords": [
