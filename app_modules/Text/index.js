@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { css } from 'glamor';
 
-import { darkGrayText, primaryColorDark } from '@app/colors';
+import { primaryColorDark } from '@app/colors';
 
 export const SIZE_MAP = {
   small: 12,
@@ -18,13 +18,13 @@ export const SIZE_MAP = {
 
 export const LINE_HEIGHT_MAP = {
   small: 1,
-  standard: 1.2,
+  standard: 1.4,
   std: 1.4, // an alias to standard
   'std-large': 1.6, // an alias to standard
-  title: 1.7,
-  headline: 2,
-  'headline-large': 2.2,
-  hero: 2.4
+  title: 2,
+  headline: 2.8,
+  'headline-large': 3.4,
+  hero: 4.2
 };
 
 const WEIGHT_MAP = {

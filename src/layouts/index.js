@@ -41,30 +41,32 @@ const Footer = () => {
       {...headerPaddingCls}
       className={'container-fluid'}
     >
-      <div className="container">
-        <div
-          className="row justify-content-center"
-          style={{ textAlign: 'end' }}
-        >
-          <div className="col-6" />
-          <div className="col-4">
-            <Text size={20} block style={{ paddingBottom: 10 }}>
-              Intalniri:
-            </Text>
-            <Text size={14} block>
-              Duminica: 9:30 - 12:00 si 18:00 - 20:00
-            </Text>
-            <Text size={14} block>
-              Joi: 18:00 - 20:00
-            </Text>
-          </div>
-          <div className="col-2">
-            <Text size={20} block style={{ paddingBottom: 10 }}>
-              Adresa:
-            </Text>
-            <Text size={14} block>
-              str Crisului nr 9, Cluj-Napoca, Romania
-            </Text>
+      <div className="row">
+        <div className="container">
+          <div
+            className="row justify-content-center"
+            style={{ textAlign: 'end' }}
+          >
+            <div className="col-6" />
+            <div className="col-4">
+              <Text size={20} block style={{ paddingBottom: 10 }}>
+                Intalniri:
+              </Text>
+              <Text size={14} block>
+                Duminica: 9:30 - 12:00 si 18:00 - 20:00
+              </Text>
+              <Text size={14} block>
+                Joi: 18:00 - 20:00
+              </Text>
+            </div>
+            <div className="col-2">
+              <Text size={20} block style={{ paddingBottom: 10 }}>
+                Adresa:
+              </Text>
+              <Text size={14} block>
+                str Crisului nr 9, Cluj-Napoca, Romania
+              </Text>
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +74,7 @@ const Footer = () => {
   );
 };
 
-const Header = () => (
+const Header = () =>
   <div
     style={{
       background: primaryColor,
@@ -96,20 +98,32 @@ const Header = () => (
               textDecoration: 'none'
             }}
           >
-            <Text size={34} block align="end" light>
+            <Text
+              size={'headline-large'}
+              block
+              color="white"
+              style={{ textAlign: 'end' }}
+              weight="light"
+            >
               Biserica Creștină după Evanghelie
             </Text>
-            <Text size={16} block align="end" thin css={{ marginTop: 10 }}>
+            <Text
+              size={'std-large'}
+              block
+              color="white"
+              style={{ textAlign: 'end' }}
+              weight="thin"
+              css={{ marginTop: 10 }}
+            >
               — Cluj-Napoca
             </Text>
           </Link>
         </Text>
       </div>
     </div>
-  </div>
-);
+  </div>;
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
       title="Biserica Cluj - Biserica Creștină după Evanghelie"
@@ -136,8 +150,7 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <Footer />
-  </div>
-);
+  </div>;
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
