@@ -16,7 +16,8 @@ const timeStyle = {
 const Footer = () => {
   return (
     <div
-      style={{
+      css={{
+        flex: 'none',
         color: 'white',
         width: '100%',
         marginTop: 20,
