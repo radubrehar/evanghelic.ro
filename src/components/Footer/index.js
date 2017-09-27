@@ -4,6 +4,15 @@ import Text from '@app/Text';
 
 import { primaryColorDark } from '@app/colors';
 
+import ExternalLink from '@app/ExternalLink';
+
+import { css } from 'glamor';
+
+const timeStyle = {
+  display: 'inline-block',
+  marginTop: 2
+};
+
 const Footer = () => {
   return (
     <div
@@ -27,7 +36,7 @@ const Footer = () => {
             <div className="col-4" />
             <div className="col-4">
               <Text
-                size={'title'}
+                size={'std-large'}
                 block
                 style={{ paddingBottom: 10 }}
                 color="white"
@@ -35,24 +44,39 @@ const Footer = () => {
                 Întâlniri:
               </Text>
               <Text size={'std'} block color="white">
-                Duminică: 9:30 - 12:00 și 18:00 - 20:00
+                <code css={timeStyle}>
+                  Duminică: 9:30 – 12:00 & 18:00 – 20:00
+                </code>
               </Text>
+
               <Text size={'std'} block color="white">
-                Joi: 18:00 - 20:00
+                <code css={timeStyle}>Joi: 18:00 – 20:00</code>
               </Text>
             </div>
             <div className="col-4">
               <Text
-                size={'title'}
+                size={'std-large'}
                 block
                 style={{ paddingBottom: 10 }}
                 color="white"
               >
                 Adresa:
               </Text>
-              <Text size={'std'} block color="white">
-                str Crișului nr 9, Cluj-Napoca, România
-              </Text>
+
+              <ExternalLink
+                href="https://maps.google.com/maps?ll=46.778774,23.622164&z=16&t=m&hl=ro-RO&gl=RO&mapclient=embed&cid=5720872781647931140"
+                style={{ color: 'white' }}
+              >
+                <Text
+                  size={'std'}
+                  css={{
+                    paddingBottom: 2
+                  }}
+                  color="white"
+                >
+                  str Crișului nr 9, Cluj-Napoca, România
+                </Text>{' '}
+              </ExternalLink>
             </div>
           </div>
         </div>
