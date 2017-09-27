@@ -22,7 +22,8 @@ export default () => {
   return (
     <div
       className="container-fluid"
-      style={{
+      css={{
+        flex: 'none',
         background: accentColor,
         width: '100%',
         boxShadow

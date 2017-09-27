@@ -6,14 +6,15 @@ import { primaryColor, primaryColorText, primaryColorDark } from '@app/colors';
 import Text from '@app/Text';
 const Header = () =>
   <div
-    style={{
+    css={{
+      flex: 'none',
       background: primaryColor,
       color: primaryColorText,
       position: 'relative'
     }}
   >
     <div
-      style={{
+      css={{
         background: primaryColorDark,
         height: 10
       }}
@@ -25,7 +26,7 @@ const Header = () =>
       className="container"
     >
       <div className="row">
-        <Text className="col" size={34}>
+        <div className="col">
           <Link
             to="/"
             style={{
@@ -52,7 +53,7 @@ const Header = () =>
               — Cluj-Napoca
             </Text>
           </Link>
-        </Text>
+        </div>
       </div>
     </div>
   </div>;
