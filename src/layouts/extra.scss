@@ -12,12 +12,6 @@ body,
 #___gatsby {
   height: 100vh;
 }
-#___gatsby > :first-child {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-  // overflow: auto;
-}
 
 body {
   color: #747474;

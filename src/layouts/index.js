@@ -27,7 +27,13 @@ import Menu from '../components/Menu';
 import { css } from 'glamor';
 
 const TemplateWrapper = ({ children }) =>
-  <div>
+  <div
+    css={{
+      display: 'flex',
+      flexFlow: 'column',
+      alignItems: 'stretch'
+    }}
+  >
     <Helmet
       title="Biserica Cluj - Biserica Creștină după Evanghelie"
       meta={[
@@ -41,11 +47,11 @@ const TemplateWrapper = ({ children }) =>
         }
       ]}
     />
-
     <Header />
     <Menu />
+
     <div
-      style={{
+      css={{
         flex: '1 0 auto',
         paddingTop: 20
       }}
