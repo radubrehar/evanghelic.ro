@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import Text from '@app/Text';
+import { primaryTextColor } from '@app/colors';
+import ExternalLink from '@app/ExternalLink';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -15,10 +17,18 @@ class Contact extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <Text size={'headline'} block>
+            <Text size={'title'} block>
               Adresa:
             </Text>
-            <Text size={'std-large'}>str Crișului nr 9, Cluj-Napoca</Text>
+
+            <ExternalLink
+              href="https://maps.google.com/maps?ll=46.778774,23.622164&z=16&t=m&hl=ro-RO&gl=RO&mapclient=embed&cid=5720872781647931140"
+              color={primaryTextColor}
+            >
+              <Text size={'std-large'}>
+                str Crișului nr 9, Cluj-Napoca, România
+              </Text>{' '}
+            </ExternalLink>
             <hr />
           </div>
         </div>

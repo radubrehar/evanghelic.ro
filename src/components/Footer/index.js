@@ -64,7 +64,7 @@ const Footer = () => {
 
               <ExternalLink
                 href="https://maps.google.com/maps?ll=46.778774,23.622164&z=16&t=m&hl=ro-RO&gl=RO&mapclient=embed&cid=5720872781647931140"
-                style={{ color: 'white' }}
+                color="white"
               >
                 <Text
                   size={'std'}

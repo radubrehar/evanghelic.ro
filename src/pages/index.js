@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
               </p>
               <p>
                 De ce în familii? Pentru că o familie creștină sănătoasă este
-                nucleul unei Bisieric sănătoase; pentru că familia e atacată azi
+                nucleul unei Biserici sănătoase; pentru că familia e atacată azi
                 mai mult decât oricând; pentru că fiecare dintre noi e parte
                 dintr-o familie. În felul acesta, întreaga Biserică e implicată
                 în împlinirea viziunii de a trăi o viață creștină împlinită prin

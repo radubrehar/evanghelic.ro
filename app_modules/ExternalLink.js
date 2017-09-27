@@ -1,12 +1,20 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 const ExternalLink = props => {
   const size = props.iconSize || 18;
+  const color = props.color;
+
+  const style = { ...props.style };
+  if (color) {
+    style.color = color;
+  }
   return (
-    <a target="_blank" {...props}>
+    <a target="_blank" {...props} style={style}>
       <svg
         css={{ verticalAlign: 'middle', marginRight: 5 }}
-        fill={props.fill || 'white'}
+        fill={props.fill || style.color}
         height={size}
         viewBox="0 0 24 24"
         width={size}
@@ -16,6 +24,12 @@ const ExternalLink = props => {
       {props.children}
     </a>
   );
+};
+
+ExternalLink.propTypes = {
+  color: PropTypes.string,
+  fill: PropTypes.string,
+  iconSize: PropTypes.number
 };
 
 export default ExternalLink;
