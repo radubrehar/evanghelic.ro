@@ -36,7 +36,7 @@ const MenuItem = ({ children, to }) => {
       activeClassName={`${menuItemActiveCls}`}
       className={`${menuItemCls}`}
     >
-      <Text primaryColor size={16} light>
+      <Text size={'std-large'} weight="light" color="white">
         {children}
       </Text>
     </Link>

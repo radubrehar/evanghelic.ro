@@ -11,10 +11,12 @@ const IndexPage = ({ data }) => {
         <div className="row">
           <div className="col">
             <Text size="headline">Bine ati venit!</Text>
-            <p>
-              Gasiti adresa noastra pe pagina de{' '}
-              <Link to="/page-2/">contact</Link>.
-            </p>
+            <Text block size="std-large">
+              <p>
+                Gasiti adresa noastra pe pagina de{' '}
+                <Link to="/page-2/">contact</Link>.
+              </p>
+            </Text>
           </div>
         </div>
       </div>

@@ -10,11 +10,11 @@ import MenuItem from './MenuItem';
 
 const ITEMS = [
   <MenuItem to="/">Acasă</MenuItem>,
-  <MenuItem to="/despre-noi">Despre noi</MenuItem>,
-  <MenuItem to="/viziune">Viziune</MenuItem>,
-  <MenuItem to="/resurse">Resurse</MenuItem>,
-  <MenuItem to="/blog">Blog</MenuItem>,
-  <MenuItem to="/cum-pot-fi-mantuit">Cum pot fi mântuit?</MenuItem>,
+  // <MenuItem to="/despre-noi">Despre noi</MenuItem>,
+  // <MenuItem to="/viziune">Viziune</MenuItem>,
+  // <MenuItem to="/resurse">Resurse</MenuItem>,
+  // <MenuItem to="/blog">Blog</MenuItem>,
+  // <MenuItem to="/cum-pot-fi-mantuit">Cum pot fi mântuit?</MenuItem>,
   <MenuItem to="/contact">Contact</MenuItem>
 ];
 

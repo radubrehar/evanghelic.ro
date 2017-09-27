@@ -15,22 +15,23 @@ class Contact extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <Text size={20} block>
+            <Text size={'headline'} block>
               Adresa:
             </Text>
-            <Text size={16}>str Crisului nr 9, Cluj-Napoca</Text>
+            <Text size={'std-large'}>str Crișului nr 9, Cluj-Napoca</Text>
             <hr />
           </div>
         </div>
+
         <div className="row">
           <div className="col">
-            <Text size={20} block>
-              Program intalniri:
+            <Text size={'title'} block>
+              Program întâlniri:
             </Text>
-            <Text size={16} block>
-              Duminica: 09:30 - 12:00 si 18:00 - 20:00
+            <Text size={'std-large'} block>
+              Duminică: 09:30 - 12:00 și 18:00 - 20:00
             </Text>
-            <Text size={16} block>
+            <Text size={'std-large'} block>
               Joi: 18:00 - 20:00
             </Text>
             <hr />

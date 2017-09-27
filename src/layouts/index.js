@@ -49,22 +49,32 @@ const Footer = () => {
           >
             <div className="col-6" />
             <div className="col-4">
-              <Text size={20} block style={{ paddingBottom: 10 }}>
-                Intalniri:
+              <Text
+                size={'title'}
+                block
+                style={{ paddingBottom: 10 }}
+                color="white"
+              >
+                Întâlniri:
               </Text>
-              <Text size={14} block>
-                Duminica: 9:30 - 12:00 si 18:00 - 20:00
+              <Text size={'std'} block color="white">
+                Duminică: 9:30 - 12:00 si 18:00 - 20:00
               </Text>
-              <Text size={14} block>
+              <Text size={'std'} block color="white">
                 Joi: 18:00 - 20:00
               </Text>
             </div>
             <div className="col-2">
-              <Text size={20} block style={{ paddingBottom: 10 }}>
+              <Text
+                size={'title'}
+                block
+                style={{ paddingBottom: 10 }}
+                color="white"
+              >
                 Adresa:
               </Text>
-              <Text size={14} block>
-                str Crisului nr 9, Cluj-Napoca, Romania
+              <Text size={'std'} block color="white">
+                str Crișului nr 9, Cluj-Napoca, România
               </Text>
             </div>
           </div>
@@ -113,7 +123,6 @@ const Header = () =>
               color="white"
               style={{ textAlign: 'end' }}
               weight="thin"
-              css={{ marginTop: 10 }}
             >
               — Cluj-Napoca
             </Text>

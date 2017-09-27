@@ -1,10 +1,27 @@
-import React from 'react'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+import Text from '@app/Text';
 
-export default NotFoundPage
+const NotFoundPage = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <Text size={'headline'} block>
+            Pagina nu există!
+          </Text>
+          <Text size={'std-large'}>
+            <p>
+              Mergeți înapoi <Link to="/">acasă</Link>, sau, mai bine,
+              vizitați-ne în Cluj-Napoca,{' '}
+              <Link to="/contact">pe str Crișului nr 9</Link>.
+            </p>
+          </Text>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NotFoundPage;
