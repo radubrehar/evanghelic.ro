@@ -21,10 +21,8 @@ const Footer = () => {
         color: 'white',
         width: '100%',
         marginTop: 20,
+        padding: '1.45rem 0px',
         background: primaryColorDark
-      }}
-      css={{
-        padding: '1.45rem 0px'
       }}
       className={'container-fluid'}
     >
