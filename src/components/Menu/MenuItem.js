@@ -23,6 +23,7 @@ const menuItemCls = css({
 
 const menuItemActiveCls = css({
   borderBottom: `8px solid ${primaryColor}`,
+  transition: 'border-bottom-color 0.5s',
   ':hover': {
     borderBottom: `8px solid ${primaryColorDark}`
   }
