@@ -7,6 +7,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "gatsby": "^1.0.1",
+    "gatsby-cli": "^1.1.7",
     "gatsby-link": "^1.0.1",
     "gatsby-plugin-catch-links": "^1.0.8",
     "gatsby-plugin-glamor": "^1.6.7",
@@ -15,6 +16,7 @@
     "gatsby-source-filesystem": "^1.4.12",
     "gatsby-transformer-remark": "^1.7.7",
     "glamor": "^2.20.39",
+    "global": "^4.3.2",
     "react-google-maps": "^7.1.0",
     "typeface-roboto": "0.0.35"
   },

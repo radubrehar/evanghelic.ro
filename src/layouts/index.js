@@ -9,6 +9,11 @@ import 'typeface-roboto';
 
 import Text from '@app/Text';
 
+import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
+
+import './extra.scss';
+
 import {
   primaryColor,
   primaryColorText,
@@ -18,119 +23,8 @@ import {
 
 import boxShadow from '@app/boxShadow';
 
-import './extra.scss';
-// import './index.css';
-// import './mdl.css';
-
 import Menu from '../components/Menu';
 import { css } from 'glamor';
-
-const headerPaddingCls = css({
-  padding: '1.45rem 0px'
-});
-
-const Footer = () => {
-  return (
-    <div
-      style={{
-        color: 'white',
-        width: '100%',
-        marginTop: 20,
-        background: primaryColorDark
-      }}
-      {...headerPaddingCls}
-      className={'container-fluid'}
-    >
-      <div className="row">
-        <div className="container">
-          <div
-            className="row justify-content-center"
-            style={{ textAlign: 'end' }}
-          >
-            <div className="col-6" />
-            <div className="col-4">
-              <Text
-                size={'title'}
-                block
-                style={{ paddingBottom: 10 }}
-                color="white"
-              >
-                Întâlniri:
-              </Text>
-              <Text size={'std'} block color="white">
-                Duminică: 9:30 - 12:00 si 18:00 - 20:00
-              </Text>
-              <Text size={'std'} block color="white">
-                Joi: 18:00 - 20:00
-              </Text>
-            </div>
-            <div className="col-2">
-              <Text
-                size={'title'}
-                block
-                style={{ paddingBottom: 10 }}
-                color="white"
-              >
-                Adresa:
-              </Text>
-              <Text size={'std'} block color="white">
-                str Crișului nr 9, Cluj-Napoca, România
-              </Text>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Header = () =>
-  <div
-    style={{
-      background: primaryColor,
-      color: primaryColorText,
-      position: 'relative'
-    }}
-  >
-    <div
-      style={{
-        background: primaryColorDark,
-        height: 10
-      }}
-    />
-    <div {...headerPaddingCls} className="container">
-      <div className="row">
-        <Text className="col" size={34}>
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none'
-            }}
-          >
-            <Text
-              size={'headline-large'}
-              block
-              color="white"
-              style={{ textAlign: 'end' }}
-              weight="light"
-            >
-              Biserica Creștină după Evanghelie
-            </Text>
-            <Text
-              size={'std-large'}
-              block
-              color="white"
-              style={{ textAlign: 'end' }}
-              weight="thin"
-            >
-              — Cluj-Napoca
-            </Text>
-          </Link>
-        </Text>
-      </div>
-    </div>
-  </div>;
 
 const TemplateWrapper = ({ children }) =>
   <div>
