@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `evanghelic.ro`,
-    welcome: 'Bine ati venit!'
+    title: `Biserica Cluj - Biserica Creștină după Evanghelie`,
+    welcome: 'Bine ați venit!'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -6,19 +6,20 @@
   "author": "Radu Brehar <radu@evanghelic.ro>",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "gatsby": "^1.0.1",
+    "gatsby": "^1.9.48",
     "gatsby-cli": "^1.1.7",
-    "gatsby-link": "^1.0.1",
+    "gatsby-link": "^1.6.17",
     "gatsby-plugin-catch-links": "^1.0.8",
     "gatsby-plugin-glamor": "^1.6.7",
-    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.6",
     "gatsby-plugin-sass": "^1.0.10",
     "gatsby-source-filesystem": "^1.4.12",
-    "gatsby-transformer-remark": "^1.7.7",
+    "gatsby-transformer-remark": "^1.7.15",
     "glamor": "^2.20.39",
     "global": "^4.3.2",
     "react-google-maps": "^7.1.0",
-    "typeface-roboto": "0.0.35"
+    "typeface-roboto": "0.0.35",
+    "update": "^0.7.4"
   },
   "keywords": [
     "biserica",
@@ -34,6 +35,6 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
-    "prettier": "^1.5.2"
+    "prettier": "^1.7.2"
   }
 }
