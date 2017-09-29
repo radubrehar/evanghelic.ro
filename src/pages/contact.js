@@ -42,7 +42,7 @@ class Contact extends React.Component {
               Duminică: 09:30 - 12:00 și 18:00 - 20:00
             </Text>
             <Text size={'std-large'} block>
-              Joi: 18:00 - 20:00
+              Joi: 18:00 - 19:30
             </Text>
             <hr />
           </div>
