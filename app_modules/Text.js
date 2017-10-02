@@ -92,8 +92,7 @@ const Text = ({
   if (color) {
     style.color = color;
   }
-
-  const Tag = props.tag || 'span';
+  const Tag = props.tagName || 'span';
   return <Tag {...props} style={style} children={children} />;
 };
 

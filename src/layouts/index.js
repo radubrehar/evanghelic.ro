@@ -5,14 +5,14 @@ import Helmet from 'react-helmet';
 
 import 'bootstrap/scss/bootstrap.scss';
 
-import 'typeface-roboto';
+// import 'typeface-roboto';
 
 import Text from '@app/Text';
 
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 
-import './extra.scss';
+import './index.scss';
 
 import {
   primaryColor,
@@ -34,23 +34,26 @@ const TemplateWrapper = ({ children }) => (
       alignItems: 'stretch'
     }}
   >
-    <Helmet
-      title="Biserica Cluj - Biserica Creștină după Evanghelie"
-      meta={[
-        {
-          name: 'google-site-verification',
-          content: 'IWAaY8Sro5jqdm-xp7TsoXt3Lvklx4w7536lsO21Jdw'
-        },
-        {
-          name: 'description',
-          content: 'Situl Bisericii Creștine după Evanghelie, Cluj-Napoca'
-        },
-        {
-          name: 'keywords',
-          content: 'cluj-napoca, biserica, creștină, evanghelie'
-        }
-      ]}
-    />
+    <Helmet>
+      <html lang="ro-RO" />
+      <title>Biserica Cluj - Biserica Creștină după Evanghelie</title>
+      <meta
+        name="google-site-verification"
+        content="IWAaY8Sro5jqdm-xp7TsoXt3Lvklx4w7536lsO21Jdw"
+      />
+      <meta
+        name="description"
+        content="Situl Bisericii Creștine după Evanghelie, Cluj-Napoca"
+      />
+      <meta
+        name="keywords"
+        content="cluj-napoca, biserica, creștină, evanghelie"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
+        rel="stylesheet"
+      />
+    </Helmet>
     <Header />
     <Menu />
 
