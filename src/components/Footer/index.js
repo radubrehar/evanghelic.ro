@@ -49,7 +49,7 @@ const Footer = () => {
               </Text>
 
               <Text size={'std'} block color="white">
-                <code css={timeStyle}>Joi: 18:00 – 20:00</code>
+                <code css={timeStyle}>Joi: 18:00 – 19:30</code>
               </Text>
             </div>
             <div className="col-4">
