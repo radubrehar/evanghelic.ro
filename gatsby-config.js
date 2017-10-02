@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Biserica Cluj - Biserica Creștină după Evanghelie`,
+    title: `Biserica Cluj, Biserica Creștină după Evanghelie`,
     welcome: 'Bine ați venit!'
   },
   plugins: [

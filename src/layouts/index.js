@@ -26,7 +26,7 @@ import boxShadow from '@app/boxShadow';
 import Menu from '../components/Menu';
 import { css } from 'glamor';
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({ children }) => (
   <div
     css={{
       display: 'flex',
@@ -37,6 +37,10 @@ const TemplateWrapper = ({ children }) =>
     <Helmet
       title="Biserica Cluj - Biserica Creștină după Evanghelie"
       meta={[
+        {
+          name: 'google-site-verification',
+          content: 'IWAaY8Sro5jqdm-xp7TsoXt3Lvklx4w7536lsO21Jdw'
+        },
         {
           name: 'description',
           content: 'Situl Bisericii Creștine după Evanghelie, Cluj-Napoca'
@@ -59,7 +63,8 @@ const TemplateWrapper = ({ children }) =>
       {children()}
     </div>
     <Footer />
-  </div>;
+  </div>
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
