@@ -49,10 +49,6 @@ const TemplateWrapper = ({ children }) => (
         name="keywords"
         content="cluj-napoca, biserica, creștină, evanghelie"
       />
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
-        rel="stylesheet"
-      />
     </Helmet>
     <Header />
     <Menu />
@@ -66,6 +62,10 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <Footer />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
+      rel="stylesheet"
+    />
   </div>
 );
 
