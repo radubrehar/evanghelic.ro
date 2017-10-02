@@ -16,8 +16,18 @@ class Contact extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col">
-            <Text size={'title'} block>
+          <div
+            className="col"
+            itemScope
+            itemType="http://schema.org/Organization"
+          >
+            <Text
+              size={'title'}
+              block
+              itemProp="address"
+              itemScope
+              itemType="http://schema.org/PostalAddress"
+            >
               Adresa:
             </Text>
 
@@ -25,10 +35,17 @@ class Contact extends React.Component {
               href="https://maps.google.com/maps?ll=46.778774,23.622164&z=16&t=m&hl=ro-RO&gl=RO&mapclient=embed&cid=5720872781647931140"
               color={primaryTextColor}
             >
-              <Text size={'std-large'}>
-                str Crișului nr 9, Cluj-Napoca, România
+              <Text size={'std-large'} itemProp="streetAddress">
+                str Crișului nr 9,
               </Text>{' '}
+              <Text size="std-large" itemProp="addressLocality">
+                Cluj-Napoca, România
+              </Text>
             </ExternalLink>
+
+            <Text block size="std-large" itemProp="name">
+              Biserica Creștină după Evanghelie Cluj-Napoca
+            </Text>
             <hr />
           </div>
         </div>
