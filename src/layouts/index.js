@@ -37,17 +37,18 @@ const TemplateWrapper = ({ children }) => (
     <Helmet>
       <html lang="ro-RO" />
       <title>Biserica Cluj - Biserica Creștină după Evanghelie</title>
+      <meta name="theme-color" content="#00BCD4" />
       <meta
         name="google-site-verification"
         content="IWAaY8Sro5jqdm-xp7TsoXt3Lvklx4w7536lsO21Jdw"
       />
       <meta
         name="description"
-        content="Situl Bisericii Creștine după Evanghelie, Cluj-Napoca"
+        content="Vino să îl cunoști pe Dumnezeu alături de noi! Biserica Cluj"
       />
       <meta
         name="keywords"
-        content="cluj-napoca, biserica, creștină, evanghelie"
+        content="cluj, biserica, creștină, evanghelie, Dumnezeu, Isus, cluj-napoca"
       />
     </Helmet>
     <Header />
