@@ -22,10 +22,18 @@ const menuItemCls = css({
 });
 
 const menuItemActiveCls = css({
+  // ':before': {
+  //   content: '',
+  //   transform: 'scale(1, 1)',
+  //   transformOrigin: '50% 50%'
+  // },
   borderBottom: `8px solid ${primaryColor}`,
   transition: 'border-bottom-color 0.5s',
   ':hover': {
     borderBottom: `8px solid ${primaryColorDark}`
+    // ':before': {
+    //   transform: 'scale(1, 1)'
+    // }
   }
 });
 

@@ -21,6 +21,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/noutati`,
+        name: 'noutati'
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark'
     }
   ]

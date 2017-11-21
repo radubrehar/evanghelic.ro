@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-export default function Template({
+import Text from '@app/Text';
+
+export default function NoutatiTemplate({
   data // this prop will be injected by the GraphQL query we'll write in a bit
 }) {
   const { markdownRemark: post, site } = data;
@@ -12,11 +14,13 @@ export default function Template({
         title={`${site.siteMetadata.title} - ${post.frontmatter.title}`}
       />
       <div className="blog-post">
-        <div className="row justify-content-center">
-          <h1>{post.frontmatter.title}</h1>
+        <div className="row">
+          <Text className="col" size="headline" css={{ marginBottom: 20 }}>
+            {post.frontmatter.title}
+          </Text>
         </div>
-        <div
-          className="blog-post-content"
+        <Text
+          size="std-large"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
@@ -25,7 +29,7 @@ export default function Template({
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query NoutatiQuery($slug: String!) {
     site {
       siteMetadata {
         title

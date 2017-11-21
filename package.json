@@ -5,6 +5,11 @@
   "version": "1.0.0",
   "author": "Radu Brehar <radu@evanghelic.ro>",
   "dependencies": {
+    "@material/card": "^0.25.0",
+    "@material/elevation": "^0.25.0",
+    "@material/rtl": "^0.1.8",
+    "@material/theme": "^0.25.0",
+    "@material/typography": "^0.3.0",
     "bootstrap": "^4.0.0-alpha.6",
     "gatsby": "^1.9.48",
     "gatsby-cli": "^1.1.7",

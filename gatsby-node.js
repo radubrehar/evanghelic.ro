@@ -1,4 +1,5 @@
 const path = require('path');
+const util = require('util');
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config.merge({
     resolve: {
@@ -17,11 +18,17 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `blog` });
+    const sourceName = getNode(node.parent).sourceInstanceName;
+    const slug = createFilePath({ node, getNode, basePath: sourceName });
     createNodeField({
       node,
       name: `slug`,
-      value: `/blog${slug}`
+      value: `/${sourceName}${slug}`
+    });
+    createNodeField({
+      node,
+      name: `sourceName`,
+      value: sourceName
     });
   }
 };
@@ -36,6 +43,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               fields {
                 slug
+                sourceName
               }
             }
           }
@@ -43,9 +51,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
+        console.log(node.fields);
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
+          component:
+            node.fields.sourceName == 'noutati'
+              ? path.resolve(`./src/templates/noutati.js`)
+              : path.resolve(`./src/templates/blog-post.js`),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug
