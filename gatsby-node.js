@@ -1,7 +1,11 @@
+const webpack = require('webpack');
 const path = require('path');
 const util = require('util');
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config.merge({
+    plugins: [
+      new webpack.ContextReplacementPlugin(/moment[\\\/]locale$/, /^\.\/(ro)$/)
+    ],
     resolve: {
       alias: {
         '@app': path.resolve(__dirname, './app_modules'),
@@ -51,7 +55,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
-        console.log(node.fields);
         createPage({
           path: node.fields.slug,
           component:

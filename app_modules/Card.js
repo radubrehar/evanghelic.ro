@@ -2,11 +2,20 @@ import React from 'react';
 
 import '@material/card/dist/mdc.card.css';
 import Text from '@app/Text';
+import nl2br from 'nl2br';
 
 export default ({ actions, children, style, title, subtitle, ...rest }) => (
-  <div className="mdc-card" style={{ background: 'white', ...style }} {...rest}>
-    <section className="mdc-card__primary">
-      <h1 className="mdc-card__title mdc-card__title--large">{title}</h1>
+  <div
+    style={{ padding: 16, background: 'white', ...style }}
+    {...rest}
+    className={`mdc-card ${rest.className || ''}`}
+  >
+    <section className="mdc-card__primary" style={{ paddingTop: 0 }}>
+      <Text
+        size="title"
+        className="mdc-card__title mdc-card__title--large"
+        dangerouslySetInnerHTML={{ __html: nl2br(title) }}
+      />
       {subtitle ? (
         <Text size="std" tone="passive">
           {subtitle}

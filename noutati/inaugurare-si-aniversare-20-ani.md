@@ -1,6 +1,8 @@
 ---
-date: "2017-11-22T22:12:33.962Z"
-title: "Inaugurare și aniversare 20 ani - 26 noiembrie 2017"
+date: 2017-11-21T22:12:33.962Z
+title: | 
+  Inaugurare și aniversare 20 ani
+  - 26 noiembrie 2017
 ---
 Duminică, 26 noiembrie 2017, este o zi de sărbătoare pentru noi - vă invităm la ora 9:30 la inaugurarea clădirii. După mai bine de doi ani de lucrări, cu ajutorul lui Dumnezeu am finalizat cu bine reconstrucția. Suntem mulțumitori multor frați din țară și de peste hotare care ne-au fost alături și ne-au sprijinit atât în rugăciune cât și financiar.
 

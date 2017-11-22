@@ -1,7 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
+import Helmet from 'src/components/Helmet';
 import Text from '@app/Text';
+import nl2br from 'nl2br';
 
 export default function NoutatiTemplate({
   data // this prop will be injected by the GraphQL query we'll write in a bit
@@ -10,14 +11,15 @@ export default function NoutatiTemplate({
 
   return (
     <div css={{ paddingTop: 20 }} className="container">
-      <Helmet
-        title={`${site.siteMetadata.title} - ${post.frontmatter.title}`}
-      />
+      <Helmet title={`${post.frontmatter.title}`} />
       <div className="blog-post">
         <div className="row">
-          <Text className="col" size="headline" css={{ marginBottom: 20 }}>
-            {post.frontmatter.title}
-          </Text>
+          <Text
+            className="col"
+            size="headline"
+            css={{ marginBottom: 20 }}
+            dangerouslySetInnerHTML={{ __html: nl2br(post.frontmatter.title) }}
+          />
         </div>
         <Text
           size="std-large"

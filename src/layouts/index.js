@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
+
+import Helmet from 'src/components/Helmet';
 
 import 'bootstrap/scss/bootstrap.scss';
 
@@ -34,23 +35,7 @@ const TemplateWrapper = ({ children }) => (
       alignItems: 'stretch'
     }}
   >
-    <Helmet>
-      <html lang="ro-RO" />
-      <title>Biserica Cluj - Biserica Creștină după Evanghelie</title>
-      <meta name="theme-color" content="#00BCD4" />
-      <meta
-        name="google-site-verification"
-        content="IWAaY8Sro5jqdm-xp7TsoXt3Lvklx4w7536lsO21Jdw"
-      />
-      <meta
-        name="description"
-        content="Vino să îl cunoști pe Dumnezeu alături de noi! Biserica Cluj"
-      />
-      <meta
-        name="keywords"
-        content="cluj, biserica, creștină, evanghelie, Dumnezeu, Isus, cluj-napoca"
-      />
-    </Helmet>
+    <Helmet />
     <Header />
     <Menu />
 
