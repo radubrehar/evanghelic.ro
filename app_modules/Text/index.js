@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 
 import { css } from 'glamor';
 
-import { primaryColorDark } from '@app/colors';
+import {
+  primaryTextColor,
+  secondaryTextColor,
+  primaryColor,
+  primaryColorDark
+} from '@app/colors';
 
 export const SIZE_MAP = {
   small: 12,
@@ -18,13 +23,13 @@ export const SIZE_MAP = {
 
 export const LINE_HEIGHT_MAP = {
   small: 1,
-  standard: 1.4,
+  standard: 1.2,
   std: 1.4, // an alias to standard
   'std-large': 1.6, // an alias to standard
-  title: 2,
-  headline: 2.8,
-  'headline-large': 3.4,
-  hero: 4.2
+  title: 1.7,
+  headline: 2.2,
+  'headline-large': 2.4,
+  hero: 2.6
 };
 
 const WEIGHT_MAP = {
@@ -37,11 +42,11 @@ const WEIGHT_MAP = {
 };
 
 export const TONE_COLOR_MAP = {
-  neutral: '#4c4c4c',
+  neutral: primaryTextColor,
   dark: '#323232',
-  positive: primaryColorDark,
-  critical: primaryColorDark,
-  passive: '#9c9c9c',
+  positive: primaryColor,
+  critical: primaryColor,
+  passive: secondaryTextColor,
   disabled: '#d0d0d0'
 };
 
@@ -87,8 +92,7 @@ const Text = ({
   if (color) {
     style.color = color;
   }
-
-  const Tag = props.tag || 'span';
+  const Tag = props.tagName || 'span';
   return <Tag {...props} style={style} children={children} />;
 };
 

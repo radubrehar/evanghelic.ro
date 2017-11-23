@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '@material/card/dist/mdc.card.css';
+
 import Text from '@app/Text';
 import nl2br from 'nl2br';
 
