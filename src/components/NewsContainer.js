@@ -25,7 +25,11 @@ export default ({ news }) => (
                 className="col-12"
                 title={article.title}
                 subtitle={`Publicat: ${ago}.`}
-                actions={[<Link to={article.url}>Citește mai mult</Link>]}
+                actions={[
+                  <Link key={article.url} to={article.url}>
+                    Citește mai mult
+                  </Link>
+                ]}
                 children={
                   <div dangerouslySetInnerHTML={{ __html: article.summary }} />
                 }

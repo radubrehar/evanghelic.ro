@@ -6,7 +6,7 @@ import Helmet from 'src/components/Helmet';
 
 import 'bootstrap/scss/bootstrap.scss';
 
-// import 'typeface-roboto';
+import 'typeface-roboto';
 
 import Text from '@app/Text';
 
@@ -48,10 +48,6 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <Footer />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
-      rel="stylesheet"
-    />
   </div>
 );
 

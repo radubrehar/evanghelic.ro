@@ -4,7 +4,7 @@ import { css } from 'glamor';
 import { primaryColor, primaryColorText, primaryColorDark } from '@app/colors';
 
 import Text from '@app/Text';
-const Header = () =>
+const Header = () => (
   <div
     css={{
       flex: 'none',
@@ -56,6 +56,7 @@ const Header = () =>
         </div>
       </div>
     </div>
-  </div>;
+  </div>
+);
 
 export default Header;
