@@ -14,7 +14,7 @@ export default () => (
           </p>
           <p>
             <b>Creșterea</b> presupune atât aspectul <b>numeric</b> (ca și alții
-            să creadă despre Hristos și să creadă în El) cât și cel{' '}
+            să audă despre Hristos și să creadă în El) cât și cel{' '}
             <b>spiritual</b>, al creșterii spre asemănarea cu Domnul Isus
             Hristos.
           </p>
