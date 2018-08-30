@@ -15,7 +15,7 @@ export default function NoutatiTemplate({
       <div className="blog-post">
         <div className="row">
           <Text
-            className="col"
+            className="col "
             size="headline"
             css={{ marginBottom: 20 }}
             dangerouslySetInnerHTML={{ __html: nl2br(post.frontmatter.title) }}
